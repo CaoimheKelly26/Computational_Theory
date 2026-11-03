@@ -66,7 +66,7 @@ The following sources were consulted during Problem 1 to help understand the rep
 
 The following sources were consulted during Problem 2 to help understand bitwise operations.
 
--https://deepwiki.com/in3rsha/sha256-animation/3.3-choice-and-majority-functions#choice-and-majority-functions -> researching choice and majority functions
+- https://deepwiki.com/in3rsha/sha256-animation/3.3-choice-and-majority-functions#choice-and-majority-functions -> researching choice and majority functions
 
 - https://deepwiki.com/in3rsha/sha256-animation/3.3-choice-and-majority-functions#purpose-of-the-choice-and-majority-functions -> researching choice and majority functions
 
