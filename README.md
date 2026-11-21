@@ -41,6 +41,17 @@ Finally, I implemented...
 
 Each functions includes a docstring or explanatory comments, alongside a Markdown explanation describing its purpose and operation. Testing was carried out using different inputs, including all-zero values, all-one values and mixed bit patterns. Assertions were used to compared the outputs against the expected hexadecimal values and verify that the functions behaved as intended.
 
+### Problem 3 - Generating SHA-256 Round Constants
+Status: Completed
+
+This problem involved generating 64 round constants used in the SHA-256 algorithm. These constants are derived from the fractional parts of the cube roots of the first 64 prime numbers, as defined in the Secure Hash Standard.
+
+I first implemented the primes(n) function to generate the first n prime numbers. This functions checks each number to determine whether it is prime and stores the result in a list. Then, I used the function to generate the first 64 prime numbers required for SHA-256.
+
+Next, I used NumPy's np.cbrt() function to calculate the cube roots of those 64 prime numbers. The resulting values were used to extract their fractional parts and convert them into 32-bit unsigned integers.
+
+Finally, I displayed the generated constants in hexadecimal form and compared them against the official SHA-256 round constants provided in the Secure Hash Standard to verify their accuracy.
+
 ## Requirements
 
 This project uses Python and Jupyter Notebook, alongside NumPy for 32-bit unsigned integer operations.
@@ -83,3 +94,17 @@ The following sources were consulted during Problem 2 to help understand bitwise
 - https://deepwiki.com/in3rsha/sha256-animation/3.2-sigma-functions#0-sigma0-function -> researching sigma0(x) functins
 
 - https://deepwiki.com/in3rsha/sha256-animation/3.2-sigma-functions#1-sigma1-function -> researching sigma1(x) function
+
+- The following sources were consulted during Problem 3 to help understand bitwise operations.
+
+- https://en.wikipedia.org/wiki/SHA-2 -> Researching and understanding SHA-256
+
+- https://www.ssldragon.com/blog/sha-256-algorithm/ -> Researching and understanding SHA-256
+
+- https://deepwiki.com/in3rsha/sha256-animation/4.1-sha-256-constants#what-are-sha-256-constants -> Understanding prime constants
+
+- https://www.cuemath.com/algebra/cubes-and-cube-roots/ -> understanding cube roots
+
+- https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf?utm_source=chatgpt.com -> SHA-256 constants
+
+- https://nvlpubs.nist.gov/nistpubs/fips/nist.fips.180-4.pdf -> Secure Hash Standard
